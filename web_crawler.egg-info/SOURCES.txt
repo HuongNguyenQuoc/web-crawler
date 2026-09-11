@@ -1,0 +1,11 @@
+pyproject.toml
+crawler/__init__.py
+crawler/config.py
+crawler/models.py
+crawler/fetcher/__init__.py
+crawler/parser/__init__.py
+web_crawler.egg-info/PKG-INFO
+web_crawler.egg-info/SOURCES.txt
+web_crawler.egg-info/dependency_links.txt
+web_crawler.egg-info/requires.txt
+web_crawler.egg-info/top_level.txt

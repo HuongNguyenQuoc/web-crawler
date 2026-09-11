@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: web-crawler
+Version: 1.0.0
+Requires-Python: >=3.12
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: uvicorn[standard]>=0.32.0
+Requires-Dist: pydantic>=2.9.0
+Requires-Dist: pydantic-settings>=2.6.0
+Requires-Dist: sqlalchemy[asyncio]>=2.0.36
+Requires-Dist: asyncpg>=0.30.0
+Requires-Dist: alembic>=1.14.0
+Requires-Dist: aioboto3>=13.2.0
+Requires-Dist: aiohttp>=3.11.0
+Requires-Dist: redis[hiredis]>=5.2.0
+Requires-Dist: selectolax>=0.3.27
+Requires-Dist: protego>=0.3.1
+Requires-Dist: cachetools>=5.5.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24.0; extra == "dev"
+Requires-Dist: ruff>=0.8.0; extra == "dev"
