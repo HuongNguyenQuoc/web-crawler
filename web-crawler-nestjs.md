@@ -442,10 +442,11 @@ export function normalizeUrl(raw: string): string | null {
 
   const query = new URLSearchParams(params).toString();
 
+  // URL ban đầu: https://EXAMPLE.com:443/products?id=123&utm_source=google#reviews
   let out = `${u.protocol}//${host}`;
   if (!isDefaultPort) out += `:${u.port}`;
-  out += path;
-  if (query) out += `?${query}`;
+  out += path; // path: for example like: /products
+  if (query) out += `?${query}`; // query: id=123
   return out;   // the #fragment is dropped automatically
 }
 
